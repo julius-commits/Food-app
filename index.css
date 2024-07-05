@@ -1,0 +1,29 @@
+#box {
+width: 300px;
+background-color: aqua;
+position: relative;
+border: solid black;
+padding-bottom: 200px;
+
+}
+
+#border {
+width: max-content;
+border: 50px solid red;
+margin-top: 200px;
+padding: 200px;
+
+border-image: url(./m.jpeg) 50 stretch;
+
+}
+
+.container {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap-reverse;
+height: 100px;
+border: 3px solid red;
+
+
+}
