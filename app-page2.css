@@ -1,48 +1,65 @@
-.nav-item {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
-}
-
-.input-container {
-  padding: 10px;
-  width: 450px;
-  display: flex;
-  border: 1px solid gray;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.input-container input:focus {
-  outline: none;
-  border: none;
-}
-
-.input-container input {
-  border: none;
-  width: 100%;
-  padding: 8px;
-  font-size: 18px;
-}
-
-.shop-icon-container {
-  display: flex;
-  gap: 5px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/* page layout*/
+.main-layout {
+  display: flex;
+}
+.main-layout aside {
+  width: 30%;
+  border: 2px solid transparent;
+}
+.main-layout section {
+  width: 70%;
+  border: 2px solid transparent;
+}
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+.input-container {
+  padding: 10px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgb(219, 219, 219);
+}
+.input-container input:focus {
+  outline: none;
+  border: none;
+}
+.input-container input {
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  width: 100%;
+}
 
+.ttt {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.shop-icon-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 64px;
+}
+.img-shop {
+  position: relative;
+}
 .shop-count {
   background-color: black;
   color: white;
@@ -54,87 +71,51 @@ nav {
   left: 15px;
   top: -9px;
 }
-
-.img-shop {
-  position: relative;
+.user-img-container {
 }
-
 header {
-  padding-top: 100px;
-  background-color: #7a44ff;
+  padding-top: 64px;
   position: relative;
+  background-color: #7a44ff;
 }
 
 .food-dish {
-  width: 95px;
+  width: 96px;
   min-height: 98px;
   max-height: auto;
   border-radius: 12px;
-  padding: 16px;
+  padding: 16px 12px;
   display: flex;
+  font-size: 14px;
+  font-family: "Poppins";
   align-items: center;
   flex-direction: column;
 }
-
 .dishs-container {
   display: flex;
   gap: 10px;
-  position: absolute;
   top: 50%;
   left: 10%;
+  width: 80%;
+  position: absolute;
 }
-
-.bg-yellow {
+.bg-orange-light {
   background-color: #faf0e6;
 }
-
 .bg-orange {
   background-color: #ffe5b4;
 }
-
-.bg-orange-light {
+.bg-yellow {
   background-color: #ffdab9;
 }
 
-.bg-pink {
-  background-color: #ffe4e1;
-}
-
-.bg-green {
-  background-color: #e0ffff;
-}
-
-.bg-light-green {
-  background-color: #e0f8e0;
-}
-
-.bg-pinky {
-  background-color: #ffdcf1;
-}
-
-.bg-blue {
-  background-color: #f9ffb4;
-}
-
-.bg-white {
-  background-color: #faf0e6;
-}
-
-.bg-almost-white {
-  background-color: white;
-}
-
-.bg-very-green {
-  background-color: green;
-}
-
+/* food card style */
 .food-card {
   width: 398px;
   height: auto;
-  background-color: white;
-  border: 1px solid white;
+  border: 1px solid rgb(239, 237, 237);
+  border-radius: 10px;
 }
-
 .img-container {
   position: relative;
 }
@@ -143,56 +124,54 @@ header {
   position: absolute;
   right: 5px;
   top: 5px;
-  background-color: grey;
+  background-color: rgb(236, 231, 231);
   padding: 6px;
   border-radius: 5px;
 }
 
 .text-container {
   display: flex;
+  gap: 10px;
+  padding: 0 8px;
   flex-direction: row;
-  justify-content: space-between;
 }
-
-.rest-logo {
-  width: 54px fixed;
-  height: 54px fixed;
-  margin-top: -20px;
+.restaurant-logo {
+  width: 54px;
+  height: 54px;
   z-index: 999;
+  margin-top: -20px;
 }
 
-.food-image {
+.food-img {
   border-radius: 10px 10px 0 0;
+}
+.rating-text {
+  color: rgb(232, 200, 137);
 }
 
 .review-text {
   display: flex;
   gap: 4px;
 }
-
-.rating-text {
-  color: orange;
+.green-bg {
+  background-color: #23c965;
 }
-
 .delivery-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: white;
-  border-radius: 10px;
-  padding: 8px;
+  border-radius: 8px;
+  padding: 4px 8px;
   height: max-content;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poppins";
   place-self: end;
 }
-
 .card-info {
   display: flex;
-  border: 1px solid transparent;
   width: 100%;
   justify-content: space-between;
   padding-bottom: 8px;
-  padding-left: 8px;
 }
 
 .card-info-head {
@@ -201,63 +180,71 @@ header {
   font-weight: 500;
   margin-bottom: 2px;
 }
-
 .card-info-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
-
-.custom-checkbox-label {
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  border: 2px solid black;
-  border-radius: 5px;
-  cursor: pointer;
-  position: relative;
-}
+/* food card style */
+/* */
 
 .custom-checkbox input[type="checkbox"] {
   display: none;
 }
-
-.custom-checkbox input[type="checkbox"]:checked + label {
-  background-color: royalblue;
+.custom-checkbox label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
 }
-
+.custom-checkbox input[type="checkbox"]:checked + label {
+  background-color: blueviolet;
+}
 .custom-checkbox input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }
 
-.custom-checkbox-label::after {
+.custom-checkbox label::after {
   content: "";
   position: absolute;
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
+  width: 6px;
+  height: 12px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  left: 6px;
   transform: rotate(45deg);
   opacity: 0;
+  top: 2px;
 }
-
-.main-layout {
-  display: flex;
-}
-
-.main-layout aside {
-  width: 30%;
-  border: 2px solid red;
-}
-
-.main-layout section {
-  width: 70%;
-  border: 2px solid yellow;
-}
-
 .filter-item {
   display: flex;
   gap: 10px;
+  margin: 10px 0;
+}
+
+/* */
+@media only screen and (max-width: 1000px) {
+  .page-container {
+    padding: 0 3px;
+  }
+
+  nav {
+    flex-direction: column-reverse;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.page-container {
+  padding: 0 175px;
 }
