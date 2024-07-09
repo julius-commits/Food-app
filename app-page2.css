@@ -108,6 +108,28 @@ header {
 .bg-yellow {
   background-color: #ffdab9;
 }
+.bg-blue {
+  background-color: #e0ffff;
+}
+
+.bg-yelp {
+  background-color: #ffdcf1;
+}
+.bg-ugly {
+  background-color: #f9ffb4;
+}
+
+.bg-oogly {
+  background-color: whitesmoke;
+}
+
+.bg-vegan {
+  background-color: #e0f8e0;
+}
+
+.bg-indian {
+  background-color: #ffe4e1;
+}
 
 /* food card style */
 .food-card {
@@ -357,4 +379,26 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.bg-purple {
+  background-color: #7a44ff;
+}
+
+.color-main {
+  color: var(--Typography-body, #7a44ff);
+  /* Heading/H3/Medium/Normal */
+  font-family: var(--typography-typeface-change-font-here-heading, Poppins);
+  font-size: var(--Typography-Size-LG-2X, 24px);
+  font-style: normal;
+  font-weight: var(--Typography-Weight-Medium, 500);
+  line-height: var(--Typography-Height-LG, 52px);
+}
+
+.search-inp {
+  display: flex;
+  width: 820px;
+  height: 56px;
+  flex-direction: column;
+  align-items: flex-start;
 }
